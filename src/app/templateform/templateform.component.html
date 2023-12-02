@@ -1,0 +1,18 @@
+<h1 style="text-align: center; color: green;">template form</h1>
+<div>
+    <form #regData="ngForm" (ngSubmit)="Register(regData)">
+        <div>
+            First name : <input type="text" placeholder="enter name" name="firstname" ngModel>
+        </div>
+        <div>
+            Last name : <input type="text" placeholder="enter name" name="lastname" ngModel>
+        </div>
+        <div>
+            Email : <input type="text" placeholder="enter name" name="email" ngModel>
+       </div>
+        <div>
+            <input type="submit" value="Regsiter" /> 
+        </div>
+        
+    </form>
+</div>
