@@ -10,3 +10,13 @@
 <div *ngIf="!isvalid">
     Invalid
 </div> -->
+<input type="text" (keyup)="0" #refVar>
+
+<div [ngSwitch]="refVar.value">
+    <div *ngSwitchCase="'abhishek'">Hello Abhishek</div>
+    <div *ngSwitchCase="'nabi'">Hello nabi</div>
+    <div *ngSwitchCase="'tillu'">Hello tillu</div>
+    <div *ngSwitchCase="'simpy'">Hello simpy</div>
+    <div *ngSwitchCase="'kal'">Hello kal</div>
+
+</div>
