@@ -11,11 +11,13 @@ import { Component} from '@angular/core';
 export class AppComponent {
   title = 'angular_2.0_codes';
   valid=true
-  
+  isvalid=true
   constructor() {
+  }
+  onchange(val:any){
+    this.isvalid=val
 
-  
-   }
+  }
    ngOnInit(){
     
    }
